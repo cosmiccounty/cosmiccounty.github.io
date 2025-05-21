@@ -3252,15 +3252,15 @@ input, select, textarea {
 		}
 
 		.wrapper.style2-alt {
-			background-color: #969393;
+			background-color: #5c5959;
 		}
 
 		.wrapper.style3 {
-			background-color: #c9c7c7;
+			background-color: #5c5959;
 		}
 
 		.wrapper.style3-alt {
-			background-color: #953d75;
+			background-color: #5c5959;
 		}
 
 		.wrapper.fullscreen {
@@ -3910,4 +3910,39 @@ input, select, textarea {
 				background-attachment: scroll;
 			}
 
+		}
+
+		body {
+			font-family: Arial, sans-serif;
+			text-align: center;
+			background-color: #5c5959;
+			margin: 0px;
+			padding: 0px;
+		}
+		
+		.gallery {
+			display: flex;
+			justify-content: normal;
+			flex-wrap: wrap;
+			gap: 0px;
+			padding: 0px;
+		}
+		
+		.video-container {
+			background: #5c5959;
+			padding: 0px;
+			border-radius: 0px;
+			box-shadow: 0 0 0px rgba(0, 0, 0, 00);
+			width: 100%;
+			max-width: 600px; /* Adjust max width as needed */
+			margin: auto;
+			position: relative;
+		}
+		
+		video {
+			width: 720px;
+			height: 720px;
+			border-radius: 0px;
+			width: 100%;
+    		display: block;
 		}
