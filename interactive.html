@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interactive</title>
+  
+  <!-- Favicon links for cross-browser compatibility -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  
+  <link rel="stylesheet" href="https://unpkg.com/papercss@1.9.2/dist/paper.min.css" />
+  <style>
+    body {
+      padding: 2rem;
+      background: var(--paper-background, #fdfcf7);
+      margin-bottom: 60px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .gallery-item {
+      cursor: pointer;
+      transition: transform 0.15s ease;
+    }
+
+    .gallery-item img,
+    .gallery-item video,
+    .gallery-item iframe {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      display: block;
+      border: 2px solid #000;
+    }
+
+    .gallery-item:hover {
+      transform: scale(1.02);
+    }
+
+    .gallery-item h3 {
+      text-align: left;
+      margin: 0.5rem 0 0 0;
+      padding-left: 0.25rem;
+    }
+
+    .btn {
+      margin-top: 0.5rem;
+    }
+
+    /* Dark mode styles */
+    body.dark {
+      background-color: #1a1a1a;
+      color: #e0e0e0;
+    }
+
+    body.dark .border,
+    body.dark .border-2,
+    body.dark .border-3,
+    body.dark .border-4,
+    body.dark .border-5,
+    body.dark .border-6 {
+      border-color: #444;
+    }
+
+    body.dark .paper,
+    body.dark .modal-body {
+      background-color: #2d2d2d;
+      color: #e0e0e0;
+    }
+
+    body.dark .nav-brand a,
+    body.dark .collapsible-body a {
+      color: #e0e0e0;
+    }
+
+    body.dark nav.border {
+      background-color: #2d2d2d;
+      border-color: #444;
+    }
+
+    body.dark .btn-small {
+      background-color: #444;
+      color: #e0e0e0;
+      border-color: #666;
+    }
+
+    body.dark .btn-small:hover {
+      background-color: #555;
+    }
+
+    body.dark .btn-close {
+      color: #e0e0e0;
+    }
+
+    body.dark h1, body.dark h2, body.dark h3 {
+      color: #e0e0e0;
+    }
+
+    body.dark .gallery-item img,
+    body.dark .gallery-item video,
+    body.dark .gallery-item iframe {
+      border-color: #666;
+    }
+
+    body.dark .btn {
+      background-color: #444;
+      color: #e0e0e0;
+      border-color: #666;
+    }
+
+    body.dark .btn:hover {
+      background-color: #555;
+    }
+
+    body.dark .btn-primary {
+      background-color: #4a90e2;
+      border-color: #357abd;
+    }
+
+    body.dark .btn-secondary {
+      background-color: #6c757d;
+      border-color: #545b62;
+    }
+
+    /* Placeholder styling for demo content */
+    .demo-placeholder {
+      width: 100%;
+      height: 250px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    }
+  </style>
+</head>
+<body>
+  <div class="gallery">
+
+    <!-- HTML Game -->
+    <div class="gallery-item">
+      <div class="demo-placeholder" style="background: linear-gradient(45deg, #8b5cf6, #a78bfa); border: 2px solid #000;">
+        🎮 Pixel Miner Game
+      </div>
+      <h3>Pixel Miner</h3>
+      <a class="btn btn-primary" href="#" onclick="alert('Game demo - would open in new window')">Play Now</a>
+    </div>
+
+    <!-- Coding Demo -->
+    <div class="gallery-item">
+      <div class="demo-placeholder" style="background: linear-gradient(45deg, #06b6d4, #0891b2); border: 2px solid #000;">
+        📊 Algorithm Visualizer
+      </div>
+      <h3>Sorting Algorithm Visualizer</h3>
+      <a class="btn btn-secondary" href="#" onclick="alert('Demo - would open sorting visualizer')">View Demo</a>
+    </div>
+
+    <!-- Self-hosted Video -->
+    <div class="gallery-item">
+      <div class="demo-placeholder" style="background: linear-gradient(45deg, #f59e0b, #d97706); border: 2px solid #000;">
+        🎬 3D Animation Preview
+        <br><small>Click to play video</small>
+      </div>
+      <h3>3D Animation Reel</h3>
+    </div>
+
+    <!-- YouTube Embed -->
+    <div class="gallery-item">
+      <div class="demo-placeholder" style="background: linear-gradient(45deg, #ef4444, #dc2626); border: 2px solid #000;">
+        🚀 Space Game Trailer
+        <br><small>YouTube Embed</small>
+      </div>
+      <h3>Space Game Trailer</h3>
+    </div>
+
+    <!-- Interactive Web App -->
+    <div class="gallery-item">
+      <div class="demo-placeholder" style="background: linear-gradient(45deg, #10b981, #059669); border: 2px solid #000;">
+        🌌 Solar System Simulator
+      </div>
+      <h3>Solar System Explorer</h3>
+      <a class="btn btn-primary" href="#" onclick="alert('Interactive demo - would open solar system app')">Explore</a>
+    </div>
+
+    <!-- Code Playground -->
+    <div class="gallery-item">
+      <div class="demo-placeholder" style="background: linear-gradient(45deg, #6366f1, #4f46e5); border: 2px solid #000;">
+        💻 Code Playground
+      </div>
+      <h3>JavaScript Experiments</h3>
+      <a class="btn btn-secondary" href="#" onclick="alert('Code demo - would open interactive coding environment')">Try It</a>
+    </div>
+
+  </div>
+
+  <!-- PaperCSS-style bottom navbar with responsive toggle -->
+  <nav class="border split-nav fixed" style="bottom: 0; top: auto;">
+    <div class="nav-brand">
+      <h3><a href="index.html">Cosmic County</a></h3>
+    </div>
+    <div class="collapsible">
+      <input id="nav-collapsible" type="checkbox" name="nav-collapsible">
+      <label for="nav-collapsible">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </label>
+      <div class="collapsible-body">
+        <ul class="inline">
+          <li><a href="writings.html">Written Word</a></li>
+          <li><a href="interactive.html">Interactive</a></li>
+          <li><a href="#" onclick="document.getElementById('aboutToggle').checked = true;">About</a></li>
+          <li><button class="btn-small" id="darkModeBtn" onclick="toggleDarkMode()">⚫</button></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- About Modal Trigger (hidden) -->
+  <input class="modal-state" id="aboutToggle" type="checkbox" />
+
+  <!-- About Modal -->
+  <div class="modal">
+    <label class="modal-bg" for="aboutToggle"></label>
+    <div class="modal-body paper">
+      <label class="btn-close" for="aboutToggle">X</label>
+      <h2>About Me</h2>
+      <p>Hello! I'm a cosmic explorer who loves creating interactive projects, short stories, and unique digital experiences. This portfolio showcases a mix of my creative and technical work inspired by the wonders of space. Thanks for visiting!</p>
+    </div>
+  </div>
+
+  <script>
+    // Simple cross-page dark mode using sessionStorage fallback and cookie-like technique
+    function getDarkMode() {
+      // Check URL parameter first
+      const urlParams = new URLSearchParams(window.location.search);
+      if (urlParams.has('dark')) {
+        return urlParams.get('dark') === 'true';
+      }
+      
+      // Fallback: check if any existing page has dark mode data in the title
+      const stored = document.cookie.replace(/(?:(?:^|.*;\s*)darkMode\s*\=\s*([^;]*).*$)|^.*$/, "$1");
+      return stored === 'true';
+    }
+
+    function setDarkMode(isDark) {
+      // Store in cookie-like way (will persist during session)
+      document.cookie = `darkMode=${isDark}; path=/; SameSite=Strict`;
+    }
+
+    function applyDarkMode(isDark) {
+      const darkModeBtn = document.getElementById('darkModeBtn');
+      if (isDark) {
+        document.body.classList.add('dark');
+        darkModeBtn.innerHTML = '⚪';
+      } else {
+        document.body.classList.remove('dark');
+        darkModeBtn.innerHTML = '⚫';
+      }
+      setDarkMode(isDark);
+    }
+
+    // Initialize dark mode on page load
+    function initDarkMode() {
+      const isDark = getDarkMode();
+      applyDarkMode(isDark);
+    }
+
+    // Toggle dark mode function
+    window.toggleDarkMode = function() {
+      const isDark = !document.body.classList.contains('dark');
+      applyDarkMode(isDark);
+    }
+
+    // Initialize dark mode when page loads
+    initDarkMode();
+  </script>
+
+</body>
+</html>

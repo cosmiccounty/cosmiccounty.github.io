@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Written Word</title>
+  <link rel="stylesheet" href="https://unpkg.com/papercss@1.9.2/dist/paper.min.css" />
+  <style>
+    body { 
+      padding: 2rem; 
+      background: var(--paper-background, #fdfcf7); 
+      margin-bottom: 60px; 
+    }
+    
+    .story-card {
+      cursor: pointer;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-height: 200px;
+      padding: 2rem;
+    }
+    
+    .story-card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    .story-card h2 {
+      margin-top: 0;
+      margin-bottom: 1rem;
+    }
+
+    .story-card blockquote {
+      margin-bottom: 1rem;
+    }
+
+    .story-card details {
+      margin-bottom: 0;
+    }
+
+    /* Dark mode styles */
+    body.dark {
+      background-color: #1a1a1a;
+      color: #e0e0e0;
+    }
+
+    body.dark .border,
+    body.dark .border-2,
+    body.dark .border-3,
+    body.dark .border-4,
+    body.dark .border-5,
+    body.dark .border-6 {
+      border-color: #444;
+    }
+
+    body.dark .paper,
+    body.dark .modal-body {
+      background-color: #2d2d2d;
+      color: #e0e0e0;
+    }
+
+    body.dark .nav-brand a,
+    body.dark .collapsible-body a {
+      color: #e0e0e0;
+    }
+
+    body.dark nav.border {
+      background-color: #2d2d2d;
+      border-color: #444;
+    }
+
+    body.dark .btn-small {
+      background-color: #444;
+      color: #e0e0e0;
+      border-color: #666;
+    }
+
+    body.dark .btn-small:hover {
+      background-color: #555;
+    }
+
+    body.dark .btn-close {
+      color: #e0e0e0;
+    }
+
+    body.dark h1, body.dark h2, body.dark h3 {
+      color: #e0e0e0;
+    }
+
+    body.dark .story-card {
+      background-color: #2d2d2d;
+      border-color: #444;
+    }
+
+    body.dark .story-card:hover {
+      box-shadow: 0 4px 10px rgba(255,255,255,0.1);
+    }
+
+    body.dark blockquote {
+      border-left-color: #666;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <article class= "paper entry story-card border-2">
+    <h2>In Good Company | 50</h2>
+    <blockquote>
+      The Praetor have gone at great lengths to hide their home world from prying eyes of those outside their Imperium. 
+    </blockquote>
+     <blockquote>
+      A millennia since their bloody conquest throughout the stars has ceased, any not bearing the Imperial colors are met with death if their eyes ever gaze upon the garden world. 
+    </blockquote>
+  </article>
+
+  <article class="paper entry story-card border-4">
+    <h2>End Of All Things | 25</h2>
+    <blockquote>
+      The Lights were worshiped by civilizations and beliefs of antiquity. 
+    </blockquote>
+     <blockquote>
+      All held one indispensable truth across them all: those who made the pilgrimage never returned. 
+    </blockquote>
+  </article>
+
+  <article class="paper entry story-card border-3">
+    <h2>Yellow Sword | 100</h2>
+    <blockquote>
+      The kingdom's villages sent tributes into the wilderness on the annual journey to the capital city. 
+    </blockquote>
+     <blockquote>
+      Audience with the king would be the reward for whoever eluded the knights of the realm which hunted them in the traditions of old.
+    </blockquote>
+     <blockquote>
+      I had found the one that stalked me, his armor bejeweled and glistening in the light of the fire of my torch as we dueled.
+    </blockquote>
+     <blockquote>
+      After hours I finally felled the bastard. Afterwards I didn't know what was more peculiar: the yellow blood that adorned my sword or the black tentacles coming from the helm, feet from where the rest laid.
+    </blockquote>
+  </article>
+
+  <article class="paper entry story-card border-2">
+    <h2>The Scarlet King | 200</h2>
+    <blockquote>
+      The Golden Palace was deserted. Along with all the dwellings and abodes that littered the planet wide city of Or.
+    </blockquote>
+     <blockquote>
+      For a millennia the Golden Kingdom had ruled the stars since humanity's pilgrimage from our ancient homeworld.
+    </blockquote>
+     <blockquote>
+      The various hued banners and colorful standards that it ruled were granted some sort of autonomy. As long as it sweared fealty to the benevolent Golden Crown.
+    </blockquote>
+     <blockquote>
+      The Scarlet King was frustrated. His forefathers had planned this usurpation for centuries. Resentment had come to a head over the years and his court informed him that the time was right to strike.
+    </blockquote>
+     <blockquote>
+      He walked absentmindedly past his knights to the throne of his rival. He wanted to avoid this. A quick capitulation is what his advisors and mystics foretold would happen. 
+    </blockquote>
+     <blockquote>
+      His soldiers knew the winds of war were starting to blow. Some would never see the Homeworld again.
+    </blockquote>
+     <blockquote>
+      The banners would take sides and the stars would be ripped apart by the bloodshed to follow. 
+    </blockquote>
+     <blockquote>
+      The Golden Kingdom had called his bluff and fled to the stars along with it's people. The king knew his reign would not be steady until those who may threaten it were dealt with.
+    </blockquote>
+  </article>
+
+  <!-- PaperCSS-style bottom navbar with responsive toggle -->
+  <nav class="border split-nav fixed" style="bottom: 0; top: auto;">
+    <div class="nav-brand">
+      <h3><a href="index.html">Cosmic County</a></h3>
+    </div>
+    <div class="collapsible">
+      <input id="nav-collapsible" type="checkbox" name="nav-collapsible">
+      <label for="nav-collapsible">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </label>
+      <div class="collapsible-body">
+        <ul class="inline">
+          <li><a href="writings.html">Written Word</a></li>
+          <li><a href="#" onclick="document.getElementById('comingSoonToggle').checked = true; return false;">Interactive</a></li>
+          <!-- When ready, replace above line with: <li><a href="interactive.html">Interactive</a></li> -->
+          <li><a href="#" onclick="document.getElementById('aboutToggle').checked = true; return false;">About</a></li>
+          <li><button class="btn-small" id="darkModeBtn" onclick="toggleDarkMode()">⚫</button></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- About Modal Trigger (hidden) -->
+  <input class="modal-state" id="aboutToggle" type="checkbox" />
+
+  <!-- About Modal -->
+  <div class="modal">
+    <label class="modal-bg" for="aboutToggle"></label>
+    <div class="modal-body paper">
+      <label class="btn-close" for="aboutToggle">X</label>
+      <h2>About Me</h2>
+      <p>Hello! I'm a cosmic explorer who loves creating interactive projects, short stories, and unique digital experiences. This portfolio showcases a mix of my creative and technical work inspired by the wonders of space. Thanks for visiting!</p>
+    </div>
+  </div>
+
+  <!-- Coming Soon Modal Trigger (hidden) -->
+  <input class="modal-state" id="comingSoonToggle" type="checkbox" />
+
+  <!-- Coming Soon Modal -->
+  <div class="modal">
+    <label class="modal-bg" for="comingSoonToggle"></label>
+    <div class="modal-body paper">
+      <label class="btn-close" for="comingSoonToggle">X</label>
+      <h2>Coming Soon 🚀</h2>
+      <p>The Interactive section is currently under construction! Check back soon for exciting interactive experiences and projects that push the boundaries of what's possible on the web.</p>
+    </div>
+  </div>
+
+  <script>
+    // Simple cross-page dark mode using sessionStorage fallback and cookie-like technique
+    function getDarkMode() {
+      // Check URL parameter first
+      const urlParams = new URLSearchParams(window.location.search);
+      if (urlParams.has('dark')) {
+        return urlParams.get('dark') === 'true';
+      }
+      
+      // Fallback: check if any existing page has dark mode data in the title
+      const stored = document.cookie.replace(/(?:(?:^|.*;\s*)darkMode\s*\=\s*([^;]*).*$)|^.*$/, "$1");
+      return stored === 'true';
+    }
+
+    function setDarkMode(isDark) {
+      // Store in cookie-like way (will persist during session)
+      document.cookie = `darkMode=${isDark}; path=/; SameSite=Strict`;
+    }
+
+    function applyDarkMode(isDark) {
+      const darkModeBtn = document.getElementById('darkModeBtn');
+      if (isDark) {
+        document.body.classList.add('dark');
+        darkModeBtn.innerHTML = '⚪';
+      } else {
+        document.body.classList.remove('dark');
+        darkModeBtn.innerHTML = '⚫';
+      }
+      setDarkMode(isDark);
+    }
+
+    // Initialize dark mode on page load
+    function initDarkMode() {
+      const isDark = getDarkMode();
+      applyDarkMode(isDark);
+    }
+
+    // Toggle dark mode function
+    window.toggleDarkMode = function() {
+      const isDark = !document.body.classList.contains('dark');
+      applyDarkMode(isDark);
+    }
+
+    // Initialize dark mode when page loads
+    initDarkMode();
+  </script>
+
+</body>
+</html>

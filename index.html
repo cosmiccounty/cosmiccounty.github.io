@@ -1,258 +1,439 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Cosmic County | Creative Works</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cosmic County</title>
+  
+  <!-- Favicon links for cross-browser compatibility -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  
+  <link rel="stylesheet" href="https://unpkg.com/papercss@1.9.2/dist/paper.min.css" />
+  <style>
+    body { padding: 2rem; background: var(--paper-background, #fdfcf7); margin-bottom: 60px; }
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
 
-				<!-- Header -->
-					<header id="header">
-						<h1><a href="pages/written-word/written-word.html"><strong>Written Word</strong> </a></h1>
-						<nav>
-							<ul>
-								<li><a href="pages/moving-pictures/moving-pictures.html">Moving Pictures</a></li>
-								<li><a href="#footer">About</a></li>
-							</ul>
-						</nav>
-					</header>
+    .gallery-item {
+      cursor: pointer;
+      transition: transform 0.15s ease;
+    }
 
-				<!-- Main -->
-					<div id="main">
-						<article class="thumb">
-							<a href="images/fulls/33.jpg" class="image"><img src="images/thumbs/33.jpg" alt="" /></a>
-							<h2>Sinews of Time</h2>
-							<p></p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/01.jpg" class="image"><img src="images/thumbs/01.jpg" alt="" /></a>
-							<h2>In Good Company</h2>
-							<p></p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/02.jpg" class="image"><img src="images/thumbs/02.jpg" alt="" /></a>
-							<h2>End Of All Things</h2>
-							<p></p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/03.jpg" class="image"><img src="images/thumbs/03.jpg" alt="" /></a>
-							<h2>Lionstar</h2>
-							<p></p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/04.jpg" class="image"><img src="images/thumbs/04.jpg" alt="" /></a>
-							<h2>Above The Ebony Sea</h2>
-							<p></p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/05.png" class="image"><img src="images/thumbs/05.png" alt="" /></a>
-							<h2>Piercing The Veil</h2>
-							<p></p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/06.jpg" class="image"><img src="images/thumbs/06.jpg" alt="" /></a>
-							<h2>Infinity</h2>
-							<p></p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/07.png" class="image"><img src="images/thumbs/07.png" alt="" /></a>
-							<h2>Allicyre: Destroyed Beauty</h2>
-							<p></p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/35.jpg" class="image"><img src="images/thumbs/35.jpg" alt="" /></a>
-							<h2>The Split Sea</h2>
-							<p></p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/34.jpg" class="image"><img src="images/thumbs/34.jpg" alt="" /></a>
-							<h2>The Ebony Sea</h2>
-							<p></p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/36.png" class="image"><img src="images/thumbs/36.png" alt="" /></a>
-							<h2>AEthlon</h2>
-							<p></p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/37.png" class="image"><img src="images/thumbs/37.png" alt="" /></a>
-							<h2>Cosmobelisk</h2>
-							<p></p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/38.png" class="image"><img src="images/thumbs/38.png" alt="" /></a>
-							<h2>Dragoons</h2>
-							<p></p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/39.png" class="image"><img src="images/thumbs/39.png" alt="" /></a>
-							<h2>DraugrVest</h2>
-							<p></p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/40.png" class="image"><img src="images/thumbs/40.png" alt="" /></a>
-							<h2>Dreadnox</h2>
-							<p></p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/41.png" class="image"><img src="images/thumbs/41.png" alt="" /></a>
-							<h2>Hussars</h2>
-							<p></p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/42.png" class="image"><img src="images/thumbs/42.png" alt="" /></a>
-							<h2>Teozin</h2>
-							<p></p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/43.png" class="image"><img src="images/thumbs/43.png" alt="" /></a>
-							<h2>Mirrorpath Initiative</h2>
-							<p></p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/44.png" class="image"><img src="images/thumbs/44.png" alt="" /></a>
-							<h2>Redchannel 75</h2>
-							<p></p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/45.png" class="image"><img src="images/thumbs/45.png" alt="" /></a>
-							<h2>Umbra Group</h2>
-							<p></p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/46.png" class="image"><img src="images/thumbs/46.png" alt="" /></a>
-							<h2>Knightfield</h2>
-							<p></p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/09.png" class="image"><img src="images/thumbs/09.png" alt="" /></a>
-							<h2>A Cosmic County Brew: The Generalissimo</h2>
-							<p></p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/10.png" class="image"><img src="images/thumbs/10.png" alt="" /></a>
-							<h2>A Cosmic County Brew: Strawberry Sensei</h2>
-							<p></p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/12.png" class="image"><img src="images/thumbs/12.png" alt="" /></a>
-							<h2>The 540 Project</h2>
-							<p></p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/13.png" class="image"><img src="images/thumbs/13.png" alt="" /></a>
-							<h2>540: Orange and Maroon</h2>
-							<p></p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/14.png" class="image"><img src="images/thumbs/14.png" alt="" /></a>
-							<h2>540: Purple and Gold</h2>
-							<p></p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/15.png" class="image"><img src="images/thumbs/15.png" alt="" /></a>
-							<h2>540: Red and Yellow</h2>
-							<p></p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/16.png" class="image"><img src="images/thumbs/16.png" alt="" /></a>
-							<h2>540: Tartan</h2>
-							<p></p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/18.jpg" class="image"><img src="images/thumbs/18.jpg" alt="" /></a>
-							<h2>Cosmic County Presents: Silvertine</h2>
-							<p></p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/19.jpg" class="image"><img src="images/thumbs/19.jpg" alt="" /></a>
-							<h2>Cosmic County Presents: Paradigm</h2>
-							<p></p>
-						</article>
-						<!-- <article class="thumb">
-							<a href="images/fulls/26.jpg" class="image"><img src="images/thumbs/26.jpg" alt="" /></a>
-							<h2>Paradigm Digital Media Solutions stationary</h2>
-							<p></p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/27.jpg" class="image"><img src="images/thumbs/27.jpg" alt="" /></a>
-							<h2>Paradigm Digital Media Solutions</h2>
-							<p></p>
-						</article> -->
-						<article class="thumb">
-							<a href="images/fulls/20.png" class="image"><img src="images/thumbs/20.png" alt="" /></a>
-							<h2>Paradigm book cover</h2>
-							<p></p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/21.png" class="image"><img src="images/thumbs/21.png" alt="" /></a>
-							<h2>Paradigm logos</h2>
-							<p></p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/23.png" class="image"><img src="images/thumbs/23.png" alt="" /></a>
-							<h2>Cosmic County Script logo</h2>
-							<p></p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/24.jpg" class="image"><img src="images/thumbs/24.jpg" alt="" /></a>
-							<h2>Cosmic County Fighting Catfish</h2>
-							<p></p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/25.png" class="image"><img src="images/thumbs/25.png" alt="" /></a>
-							<h2>Countee Line</h2>
-							<p></p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/28.jpg" class="image"><img src="images/thumbs/28.jpg" alt="" /></a>
-							<h2>Mad Titan</h2>
-							<p></p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/31.png" class="image"><img src="images/thumbs/31.png" alt="" /></a>
-							<h2>The Independent City of Radford</h2>
-							<p></p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/32.jpg" class="image"><img src="images/thumbs/32.jpg" alt="" /></a>
-							<h2>Infactographic</h2>
-							<p></p>
-						</article>
-					</div>
+    .gallery-item:hover {
+      transform: scale(1.02);
+    }
 
-				<!-- Footer -->
-					<footer id="footer" class="panel">
-						
-							<div>
-								<section>
-									<h2>About Me</h2>
-									<p>Stephen loves to make graphics that are appealing to the eye.</p>
-									<p>Stephen is heavily influenced through all aspects of popular culture, and through that crafts images that captivate the viewer. </p>
-									<p>Stephen doesn't normally refer to himself in the third person but thought it was an intriguing way for you to read this About Me section and he thanks you for that.</p>
-								</section>
-								<p class="copyright">
-									&copy; <a href=>Cosmic County</a>.
-								</p>
-							</div>
-						</div>
-					</footer>
+    .gallery-item h3 {
+      text-align: left;
+      margin: 0.5rem 0 0 0;
+      padding-left: 0.25rem;
+    }
 
-			</div>
+    .gallery-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+    #lightbox {
+      position: fixed; top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.8); display: none;
+      justify-content: center; align-items: center;
+      z-index: 9999;
+    }
 
-	</body>
+    #lightbox img {
+      max-width: 90%; max-height: 90%;
+      border: 4px solid white; box-shadow: 0 0 20px rgba(255,255,255,0.8);
+    }
+
+    /* Dark mode styles */
+    body.dark {
+      background-color: #1a1a1a;
+      color: #e0e0e0;
+    }
+
+    body.dark .border,
+    body.dark .border-2,
+    body.dark .border-3,
+    body.dark .border-4,
+    body.dark .border-5,
+    body.dark .border-6 {
+      border-color: #444;
+    }
+
+    body.dark .paper,
+    body.dark .modal-body {
+      background-color: #2d2d2d;
+      color: #e0e0e0;
+    }
+
+    body.dark .nav-brand a,
+    body.dark .collapsible-body a {
+      color: #e0e0e0;
+    }
+
+    body.dark nav.border {
+      background-color: #2d2d2d;
+      border-color: #444;
+    }
+
+    body.dark .btn-small {
+      background-color: #444;
+      color: #e0e0e0;
+      border-color: #666;
+    }
+
+    body.dark .btn-small:hover {
+      background-color: #555;
+    }
+
+    body.dark .btn-close {
+      color: #e0e0e0;
+    }
+
+    body.dark h2, body.dark h3 {
+      color: #e0e0e0;
+    }
+  </style>
+</head>
+<body>
+
+<section id="projects">
+    <div class="gallery">
+      
+      <div class="gallery-item" data-full="images/fulls/01.jpg">
+        <img class="border-2 shadow" src="images/thumbs/01.jpg" alt="In Good Company">
+        <h3>In Good Company</h3>
+      </div>
+
+      <div class="gallery-item" data-full="images/fulls/02.jpg">
+        <img class="border-3 shadow" src="images/thumbs/02.jpg" alt="End Of All Things">
+        <h3>End Of All Things</h3>
+      </div>
+
+      <div class="gallery-item" data-full="images/fulls/03.jpg">
+        <img class="border-4 shadow" src="images/thumbs/03.jpg" alt="Lionstar">
+        <h3>Lionstar</h3>
+      </div>
+
+      <div class="gallery-item" data-full="images/fulls/04.jpg">
+        <img class="border-5 shadow" src="images/thumbs/04.jpg" alt="Above The Ebony Sea">
+        <h3>Above The Ebony Sea</h3>
+      </div>
+
+      <div class="gallery-item" data-full="images/fulls/05.jpg">
+        <img class="border-6 shadow" src="images/thumbs/05.jpg" alt="Piercing The Veil">
+        <h3>Piercing The Veil</h3>
+      </div>
+
+      <div class="gallery-item" data-full="images/fulls/06.jpg">
+        <img class="border shadow" src="images/thumbs/06.jpg" alt="Infinity">
+        <h3>Infinity</h3>
+      </div>
+
+      <div class="gallery-item" data-full="images/fulls/07.jpg">
+        <img class="border-2 shadow" src="images/thumbs/07.jpg" alt="Allicyre">
+        <h3>Black Holes</h3>
+      </div>
+
+      <div class="gallery-item" data-full="images/fulls/08.jpg">
+        <img class="border-3 shadow" src="images/thumbs/08.jpg" alt="The Split Sea">
+        <h3>The Split Sea</h3>
+      </div>
+
+      <div class="gallery-item" data-full="images/fulls/09.jpg">
+        <img class="border-4 shadow" src="images/thumbs/09.jpg" alt="The Ebony Sea">
+        <h3>The Ebony Sea</h3>
+      </div>
+
+      <div class="gallery-item" data-full="images/fulls/10.jpg">
+        <img class="border-4 shadow" src="images/thumbs/10.jpg" alt="The Split Sea">
+        <h3>The Split Sea</h3>
+      </div>
+
+      <div class="gallery-item" data-full="images/fulls/11.jpg">
+        <img class="border-2 shadow" src="images/thumbs/11.jpg" alt="Aethlon">
+        <h3>Aethlon</h3>
+      </div>
+
+      <div class="gallery-item" data-full="images/fulls/12.jpg">
+        <img class="border-3 shadow" src="images/thumbs/12.jpg" alt="Cosmobelisk">
+        <h3>Cosmobelisk</h3>
+      </div>
+
+      <div class="gallery-item" data-full="images/fulls/13.jpg">
+        <img class="border-4 shadow" src="images/thumbs/13.jpg" alt="Dragoons">
+        <h3>Dragoons</h3>
+      </div>
+
+      <div class="gallery-item" data-full="images/fulls/14.jpg">
+        <img class="border-5 shadow" src="images/thumbs/14.jpg" alt="Draugrvest">
+        <h3>Draugrvest</h3>
+      </div>
+
+      <div class="gallery-item" data-full="images/fulls/15.jpg">
+        <img class="border-6 shadow" src="images/thumbs/15.jpg" alt="Dreadnox">
+        <h3>Dreadnox</h3>
+      </div>
+
+      <div class="gallery-item" data-full="images/fulls/16.jpg">
+        <img class="border shadow" src="images/thumbs/16.jpg" alt="Hussars">
+        <h3>Hussars</h3>
+      </div>
+
+      <div class="gallery-item" data-full="images/fulls/17.jpg">
+        <img class="border-2 shadow" src="images/thumbs/17.jpg" alt="Teozin">
+        <h3>Teozin</h3>
+      </div>
+
+      <div class="gallery-item" data-full="images/fulls/18.jpg">
+        <img class="border-3 shadow" src="images/thumbs/18.jpg" alt="Mirropath Initiative">
+        <h3>Mirropath Initiative</h3>
+      </div>
+
+      <div class="gallery-item" data-full="images/fulls/19.jpg">
+        <img class="border-4 shadow" src="images/thumbs/19.jpg" alt="Redchannel 75">
+        <h3>Redchannel 75</h3>
+      </div>
+
+      <div class="gallery-item" data-full="images/fulls/20.jpg">
+        <img class="border-4 shadow" src="images/thumbs/20.jpg" alt="Umbra Group">
+        <h3>Umbra Group</h3>
+      </div>
+
+      <div class="gallery-item" data-full="images/fulls/21.jpg">
+        <img class="border-2 shadow" src="images/thumbs/21.jpg" alt="Knightfield">
+        <h3>Knightfield</h3>
+      </div>
+
+      <div class="gallery-item" data-full="images/fulls/22.jpg">
+        <img class="border-3 shadow" src="images/thumbs/22.jpg" alt="The Generalissimo">
+        <h3>The Generalissimo</h3>
+      </div>
+
+      <div class="gallery-item" data-full="images/fulls/23.jpg">
+        <img class="border-4 shadow" src="images/thumbs/23.jpg" alt="Strawberry Sensei">
+        <h3>Strawberry Sensei</h3>
+      </div>
+
+      <div class="gallery-item" data-full="images/fulls/24.jpg">
+        <img class="border-5 shadow" src="images/thumbs/24.jpg" alt="Silvertine">
+        <h3>Silvertine</h3>
+      </div>
+
+      <div class="gallery-item" data-full="images/fulls/25.jpg">
+        <img class="border-6 shadow" src="images/thumbs/25.jpg" alt="Paradigm">
+        <h3>Paradigm</h3>
+      </div>
+
+      <div class="gallery-item" data-full="images/fulls/26.jpg">
+        <img class="border shadow" src="images/thumbs/26.jpg" alt="Paradigm Book Cover">
+        <h3>Paradigm Book Cover</h3>
+      </div>
+
+      <div class="gallery-item" data-full="images/fulls/27.jpg">
+        <img class="border-2 shadow" src="images/thumbs/27.jpg" alt="Paradigm Test Logos">
+        <h3>Paradigm Test Logos</h3>
+      </div>
+
+      <div class="gallery-item" data-full="images/fulls/28.jpg">
+        <img class="border-3 shadow" src="images/thumbs/28.jpg" alt="The 540 Project">
+        <h3>The 540 Project</h3>
+      </div>
+
+      <div class="gallery-item" data-full="images/fulls/29.jpg">
+        <img class="border-4 shadow" src="images/thumbs/29.jpg" alt="540: Orange & Maroon">
+        <h3>540: Orange & Maroon</h3>
+      </div>
+
+      <div class="gallery-item" data-full="images/fulls/30.jpg">
+        <img class="border-4 shadow" src="images/thumbs/30.jpg" alt="540: Purple & Gold">
+        <h3>540: Purple & Gold</h3>
+      </div>
+
+      <div class="gallery-item" data-full="images/fulls/31.jpg">
+        <img class="border-2 shadow" src="images/thumbs/31.jpg" alt="540: Red & Yellow">
+        <h3>540: Red & Yellow</h3>
+      </div>
+
+      <div class="gallery-item" data-full="images/fulls/32.jpg">
+        <img class="border-3 shadow" src="images/thumbs/32.jpg" alt="540: Tartan">
+        <h3>540: Tartan</h3>
+      </div>
+
+      <div class="gallery-item" data-full="images/fulls/34.jpg">
+        <img class="border-5 shadow" src="images/thumbs/34.jpg" alt="Cosmic County Retro Logo">
+        <h3>Cosmic County Retro Logo</h3>
+      </div>
+
+      <div class="gallery-item" data-full="images/fulls/35.jpg">
+        <img class="border-6 shadow" src="images/thumbs/35.jpg" alt="Cosmic County Fighting Catfish">
+        <h3>Cosmic County Fighting Catfish</h3>
+      </div>
+
+      <div class="gallery-item" data-full="images/fulls/36.jpg">
+        <img class="border shadow" src="images/thumbs/36.jpg" alt="Countee Line">
+        <h3>Countee Line</h3>
+      </div>
+
+      <div class="gallery-item" data-full="images/fulls/37.jpg">
+        <img class="border-2 shadow" src="images/thumbs/37.jpg" alt="paraDIGM DMS Marketing Materials">
+        <h3>paraDIGM DMS Marketing Materials</h3>
+      </div>
+
+      <div class="gallery-item" data-full="images/fulls/38.jpg">
+        <img class="border-3 shadow" src="images/thumbs/38.jpg" alt="paraDIGM BW Logos">
+        <h3>paraDIGM BW Logos</h3>
+      </div>
+
+      <div class="gallery-item" data-full="images/fulls/39.jpg">
+        <img class="border-4 shadow" src="images/thumbs/39.jpg" alt="Mad Titan">
+        <h3>Mad Titan</h3>
+      </div>
+
+      <div class="gallery-item" data-full="images/fulls/40.jpg">
+        <img class="border-4 shadow" src="images/thumbs/40.jpg" alt="Ozmo Summer 2020 Shirt">
+        <h3>Ozmo Summer 2020 Shirt</h3>
+      </div>
+
+      <div class="gallery-item" data-full="images/fulls/41.jpg">
+        <img class="border-2 shadow" src="images/thumbs/41.jpg" alt="Ozmo Summer 2020 Shirt Logo">
+        <h3>Ozmo Summer 2020 Shirt Logo</h3>
+      </div>
+
+      <div class="gallery-item" data-full="images/fulls/42.jpg">
+        <img class="border-3 shadow" src="images/thumbs/42.jpg" alt="The Independent City of Radford">
+        <h3>The Independent City of Radford</h3>
+      </div>
+
+      <div class="gallery-item" data-full="images/fulls/43.jpg">
+        <img class="border-4 shadow" src="images/thumbs/43.jpg" alt="Infactographic 01">
+        <h3>Infactographic 01</h3>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div id="lightbox"><img src="" alt="Full project view" /></div>
+
+  <!-- PaperCSS-style bottom navbar with responsive toggle -->
+  <nav class="border split-nav fixed" style="bottom: 0; top: auto;">
+    <div class="nav-brand">
+      <h3><a href="index.html">Cosmic County</a></h3>
+    </div>
+    <div class="collapsible">
+      <input id="nav-collapsible" type="checkbox" name="nav-collapsible">
+      <label for="nav-collapsible">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </label>
+      <div class="collapsible-body">
+        <ul class="inline">
+          <li><a href="writings.html">Written Word</a></li>
+          <li><a href="#" onclick="document.getElementById('comingSoonToggle').checked = true; return false;">Interactive</a></li>
+          <!-- When ready, replace above line with: <li><a href="interactive.html">Interactive</a></li> -->
+          <li><a href="#" onclick="document.getElementById('aboutToggle').checked = true; return false;">About</a></li>
+          <li><button class="btn-small" id="darkModeBtn" onclick="toggleDarkMode()">⚫</button></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- About Modal Trigger (hidden) -->
+  <input class="modal-state" id="aboutToggle" type="checkbox" />
+
+  <!-- About Modal -->
+  <div class="modal">
+    <label class="modal-bg" for="aboutToggle"></label>
+    <div class="modal-body paper">
+      <label class="btn-close" for="aboutToggle">X</label>
+      <h2>About Me</h2>
+      <p>Hello! I'm a cosmic explorer who loves creating interactive projects, short stories, and unique digital experiences. This portfolio showcases a mix of my creative and technical work inspired by the wonders of space. Thanks for visiting!</p>
+    </div>
+  </div>
+
+  <!-- Coming Soon Modal Trigger (hidden) -->
+  <input class="modal-state" id="comingSoonToggle" type="checkbox" />
+
+  <!-- Coming Soon Modal -->
+  <div class="modal">
+    <label class="modal-bg" for="comingSoonToggle"></label>
+    <div class="modal-body paper">
+      <label class="btn-close" for="comingSoonToggle">X</label>
+      <h2>Coming Soon 🚀</h2>
+      <p>The Interactive section is currently under construction! Check back soon for exciting interactive experiences and projects that push the boundaries of what's possible on the web.</p>
+    </div>
+  </div>
+
+  <script>
+    // Simple cross-page dark mode using sessionStorage fallback and cookie-like technique
+    function getDarkMode() {
+      // Check URL parameter first
+      const urlParams = new URLSearchParams(window.location.search);
+      if (urlParams.has('dark')) {
+        return urlParams.get('dark') === 'true';
+      }
+      
+      // Fallback: check if any existing page has dark mode data in the title
+      const stored = document.cookie.replace(/(?:(?:^|.*;\s*)darkMode\s*\=\s*([^;]*).*$)|^.*$/, "$1");
+      return stored === 'true';
+    }
+
+    function setDarkMode(isDark) {
+      // Store in cookie-like way (will persist during session)
+      document.cookie = `darkMode=${isDark}; path=/; SameSite=Strict`;
+    }
+
+    function applyDarkMode(isDark) {
+      const darkModeBtn = document.getElementById('darkModeBtn');
+      if (isDark) {
+        document.body.classList.add('dark');
+        darkModeBtn.innerHTML = '⚪';
+      } else {
+        document.body.classList.remove('dark');
+        darkModeBtn.innerHTML = '⚫';
+      }
+      setDarkMode(isDark);
+    }
+
+    // Initialize dark mode on page load
+    function initDarkMode() {
+      const isDark = getDarkMode();
+      applyDarkMode(isDark);
+    }
+
+    // Toggle dark mode function
+    window.toggleDarkMode = function() {
+      const isDark = !document.body.classList.contains('dark');
+      applyDarkMode(isDark);
+    }
+
+    // Initialize dark mode when page loads
+    initDarkMode();
+
+    // Lightbox script
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = lightbox.querySelector('img');
+    document.querySelectorAll('.gallery-item').forEach(item => {
+      item.addEventListener('click', () => {
+        const fullImageSrc = item.getAttribute('data-full');
+        lightboxImg.src = fullImageSrc;
+        lightbox.style.display = 'flex';
+      });
+    });
+    lightbox.addEventListener('click', () => lightbox.style.display = 'none');
+  </script>
+</body>
 </html>
